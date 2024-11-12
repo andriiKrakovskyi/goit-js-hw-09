@@ -95,3 +95,39 @@ input {
   border: 1px solid #808080;
   height: 40px;
 }
+
+.general-wrap {
+  margin: 20px 0 0 50px;
+}
+
+.general-wrap a {
+  font-size: 30px;
+  color: rgb(183, 0, 255);
+  border-radius: 4px;
+  border: 2px solid #808080;
+  padding: 5px 10px 5px 10px;
+}
+
+.general-list {
+  margin: 30px 30px 0px 30px;
+  text-align: center;
+}
+.general-list a {
+  font-size: 30px;
+  color: rgb(183, 0, 255);
+}
+
+.general-item {
+  border-radius: 4px;
+  border: 2px solid #808080;
+  padding: 8px 16px 8px 16px;
+  margin-bottom: 20px;
+}
+
+.general-wrap a:hover,
+.general-wrap a:focus,
+.general-item a:hover,
+.general-item a:focus {
+  color: #00f74a;
+  background: #f33311;
+}

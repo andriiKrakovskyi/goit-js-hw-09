@@ -2,12 +2,12 @@ const formData = { email: '', message: '' };
 
 const formFeedback = document.querySelector('.feedback-form');
 
-const storageGet = localStorage.getItem('feedback-form-state');
+const storageGet = JSON.parse(localStorage.getItem('feedback-form-state'));
+console.log(storageGet);
 
 if (storageGet) {
-  const parsedData = JSON.parse(storageGet);
-  formData.email = parsedData.email || '';
-  formData.message = parsedData.message || '';
+  formData.email = storageGet.email;
+  formData.message = storageGet.message;
   formFeedback.elements.email.value = formData.email;
   formFeedback.elements.message.value = formData.message;
 }
@@ -18,7 +18,6 @@ formFeedback.addEventListener('submit', handleSubmit);
 function handleInput(event) {
   formData[event.target.name] = event.target.value.trim();
   localStorage.setItem('feedback-form-state', JSON.stringify(formData));
-
   return;
 }
 
