@@ -16,3 +16,82 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 24px 156px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.333% - 24px);
+}
+
+.gallery-link {
+  display: block;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* ---------------------- */
+
+.wrap-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  width: 408px;
+  border-radius: 8px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+  text-align: start;
+  color: #2e2f42;
+  font-family: Montserrat;
+  letter-spacing: 0.04em;
+}
+
+.feedback-form button {
+  margin-top: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #fff;
+  font-family: Montserrat;
+  font-weight: 500;
+  width: 86px;
+  border: none;
+}
+
+input {
+  color: #2e2f42;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  height: 40px;
+}
